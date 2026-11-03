@@ -1,0 +1,22 @@
+
+{
+  "enabled": true,
+  "default": {
+    "title": "Conoce los proyectos LC",
+    "description": "Descubre nuestras aplicaciones y herramientas.",
+    "image": "",
+    "link": "https://luischarlii.github.io/",
+    "label": "PUBLICIDAD"
+  },
+  "campaigns": [
+    {
+      "id": "lc-passwords",
+      "enabled": true,
+      "title": "LC Universal Radio",
+      "description": "Descubre nuestra plataforma de radio por internet.",
+      "image": "",
+      "link": "https://luischarlii.github.io/",
+      "label": "PROYECTO LC"
+    }
+  ]
+}
