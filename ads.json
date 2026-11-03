@@ -1,6 +1,6 @@
 
 {
-  "enabled": true,
+  "enabled": false,
   "rotationSeconds": 12,
   "default": {
     "title": "Conoce los proyectos LC",
@@ -27,7 +27,7 @@
  
    {
   "id": "tiktok-destacado",
-  "enabled": true,
+  "enabled": false,
   "type": "own",
   "priority": 100,
   "startDate": "2026-11-03",
@@ -43,7 +43,7 @@
 
     {
       "id": "lc-radio",
-      "enabled": true,
+      "enabled": false,
       "type": "own",
       "priority": 10,
       "startDate": "2026-11-01",
@@ -57,7 +57,7 @@
     },
     {
       "id": "external-demo",
-      "enabled": true,
+      "enabled": false,
       "type": "external",
       "priority": 5,
       "startDate": "2026-11-01",
