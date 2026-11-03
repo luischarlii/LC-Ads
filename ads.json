@@ -23,7 +23,23 @@
   "image": "",
   "link": "https://vt.tiktok.com/ZSpRSUJoH/",
   "label": "TIKTOK"
-}, 
+},
+   
+{
+  "id": "nrg-solar-rv",
+  "enabled": true,
+  "type": "external",
+  "priority": 90,
+  "startDate": "2026-11-03",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "NRG Solar RV",
+  "description": "Instalación de paneles solares para tu hogar y negocio. Solicita tu cotización por WhatsApp.",
+  "image": "https://luischarlii.github.io/LC-Ads/nrg-solar-rv.jpg",
+  "link": "https://wa.me/526142882226",
+  "label": "ANUNCIANTE"
+},
+ 
     {
       "id": "lc-radio",
       "enabled": true,
