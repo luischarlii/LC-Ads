@@ -1,6 +1,6 @@
 
 {
-  "enabled": false,
+  "enabled": true,
   "rotationSeconds": 12,
   "default": {
     "title": "Conoce los proyectos LC",
