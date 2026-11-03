@@ -130,10 +130,14 @@
       const close = document.createElement("button");
       close.textContent = "×";
       close.setAttribute("aria-label", "Cerrar publicidad");
-      close.onclick = () => {
-        clearInterval(timer);
-        widget.remove();
-      };
+close.onclick = () => {
+  widget.style.display = "none";
+
+  setTimeout(() => {
+    widget.style.display = "block";
+  }, 60000);
+};
+      
       header.appendChild(close);
 
       const content = document.createElement("div");
