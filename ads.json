@@ -12,7 +12,7 @@
   "campaigns": [
     {
       "id": "lc-radio",
-      "enabled": false,
+      "enabled": true,
       "type": "own",
       "priority": 10,
       "startDate": "2026-11-01",
@@ -21,7 +21,7 @@
       "title": "LC Universal Radio",
       "description": "Descubre nuestra plataforma de radio por internet.",
       "image": "",
-"link": "https://luischarlii.github.io/LC-Universal-Radio/",
+"link": "https://luischarlii.github.io/LC-Universal-Radio/"
       "label": "PROYECTO LC"
     },
     {
