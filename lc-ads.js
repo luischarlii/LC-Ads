@@ -8,6 +8,19 @@
 
   if (document.getElementById("lc-ads-widget")) return;
 
+  let timer = null;
+  let currentIndex = 0;
+
+  const safeUrl = value => {
+    try {
+      const url = new URL(value, location.href);
+      return ["https:", "http:"].includes(url.protocol)
+        ? url.href : "#";
+    } catch {
+      return "#";
+    }
+  };
+
   async function init() {
     try {
       const response = await fetch(
@@ -15,32 +28,31 @@
         { cache: "no-store" }
       );
 
-      if (!response.ok) throw new Error("No se pudo cargar ads.json");
+      if (!response.ok) throw new Error("Error al cargar campañas");
 
       const data = await response.json();
 
       if (!data.enabled) return;
 
-      const campaign = data.campaigns?.find(
-        item => item.id === appId && item.enabled
-      );
+      const today = new Date().toISOString().slice(0, 10);
 
-      const ad = campaign || data.default;
+      const campaigns = (data.campaigns || [])
+        .filter(ad =>
+          ad.enabled &&
+          Array.isArray(ad.apps) &&
+          (ad.apps.includes("all") || ad.apps.includes(appId)) &&
+          (!ad.startDate || ad.startDate <= today) &&
+          (!ad.endDate || ad.endDate >= today) &&
+          ad.link
+        )
+        .sort((a, b) => (b.priority || 0) - (a.priority || 0));
 
-      if (!ad) return;
+      const ads = campaigns.length ? campaigns : [data.default];
 
-      const safeUrl = value => {
-        try {
-          const url = new URL(value, location.href);
-          return ["https:", "http:"].includes(url.protocol)
-            ? url.href
-            : "#";
-        } catch {
-          return "#";
-        }
-      };
+      if (!ads[0]) return;
 
       const style = document.createElement("style");
+
       style.textContent = `
         #lc-ads-widget {
           position:fixed;
@@ -68,9 +80,8 @@
           color:#fbbf24;
           font-size:10px;
           font-weight:bold;
-          letter-spacing:1px;
         }
-        #lc-ads-widget .close {
+        #lc-ads-widget button {
           background:none;
           border:0;
           color:white;
@@ -84,29 +95,19 @@
           padding:12px;
         }
         #lc-ads-widget img {
-          width:65px;
-          height:65px;
-          object-fit:cover;
-          border-radius:9px;
-          flex-shrink:0;
+          width:65px;height:65px;
+          object-fit:cover;border-radius:9px;
         }
         #lc-ads-widget .info {flex:1;min-width:0}
         #lc-ads-widget .title {
-          font-size:14px;
-          font-weight:bold;
-          margin-bottom:5px;
+          font-size:14px;font-weight:bold;margin-bottom:5px;
         }
         #lc-ads-widget .description {
-          font-size:11px;
-          color:#cbd5e1;
-          line-height:1.4;
+          font-size:11px;color:#cbd5e1;line-height:1.4;
         }
         #lc-ads-widget .link {
-          display:inline-block;
-          margin-top:8px;
-          color:#60a5fa;
-          font-size:11px;
-          font-weight:bold;
+          display:inline-block;margin-top:8px;
+          color:#60a5fa;font-size:11px;font-weight:bold;
           text-decoration:none;
         }
         @keyframes lcAdsIn {
@@ -124,50 +125,74 @@
       header.className = "head";
 
       const label = document.createElement("span");
-      label.textContent = ad.label || "PUBLICIDAD";
       header.appendChild(label);
 
       const close = document.createElement("button");
-      close.className = "close";
       close.textContent = "×";
       close.setAttribute("aria-label", "Cerrar publicidad");
-      close.onclick = () => widget.remove();
+      close.onclick = () => {
+        clearInterval(timer);
+        widget.remove();
+      };
       header.appendChild(close);
 
       const content = document.createElement("div");
       content.className = "content";
 
-      if (ad.image) {
-        const img = document.createElement("img");
-        img.src = safeUrl(ad.image);
-        img.alt = "";
-        img.onerror = () => img.remove();
-        content.appendChild(img);
-      }
+      const img = document.createElement("img");
+      img.alt = "";
+      img.hidden = true;
 
       const info = document.createElement("div");
       info.className = "info";
 
       const title = document.createElement("div");
       title.className = "title";
-      title.textContent = ad.title || "Publicidad LC";
 
       const description = document.createElement("div");
       description.className = "description";
-      description.textContent = ad.description || "";
 
       const link = document.createElement("a");
       link.className = "link";
       link.textContent = "Conocer más ↗";
-      link.href = safeUrl(ad.link || "");
       link.target = "_blank";
       link.rel = "noopener noreferrer";
 
       info.append(title, description, link);
-      content.appendChild(info);
+      content.append(img, info);
       widget.append(header, content);
-
       document.body.appendChild(widget);
+
+      function showAd(index) {
+        const ad = ads[index];
+
+        label.textContent = ad.label || "PUBLICIDAD";
+        title.textContent = ad.title || "Publicidad LC";
+        description.textContent = ad.description || "";
+        link.href = safeUrl(ad.link || "");
+
+        if (ad.image && safeUrl(ad.image) !== "#") {
+          img.src = safeUrl(ad.image);
+          img.hidden = false;
+        } else {
+          img.hidden = true;
+        }
+
+        currentIndex = index;
+      }
+
+      showAd(0);
+
+      const interval = Math.max(
+        5,
+        Number(data.rotationSeconds) || 12
+      );
+
+      if (ads.length > 1) {
+        timer = setInterval(() => {
+          showAd((currentIndex + 1) % ads.length);
+        }, interval * 1000);
+      }
 
     } catch (error) {
       console.error("LC Ads:", error);
