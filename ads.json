@@ -10,6 +10,20 @@
     "label": "PUBLICIDAD"
   },
   "campaigns": [
+   {
+  "id": "tiktok-destacado",
+  "enabled": true,
+  "type": "own",
+  "priority": 100,
+  "startDate": "2026-11-03",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "Video destacado en TikTok",
+  "description": "Mira nuestro video en TikTok.",
+  "image": "",
+  "link": "https://vt.tiktok.com/ZSpRSUJoH/",
+  "label": "TIKTOK"
+}, 
     {
       "id": "lc-radio",
       "enabled": true,
