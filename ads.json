@@ -12,7 +12,7 @@
   "campaigns": [
     {
       "id": "lc-radio",
-      "enabled": true,
+      "enabled": false,
       "type": "own",
       "priority": 10,
       "startDate": "2026-11-01",
