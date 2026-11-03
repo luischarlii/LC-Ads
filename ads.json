@@ -1,6 +1,7 @@
 
 {
   "enabled": true,
+  "rotationSeconds": 12,
   "default": {
     "title": "Conoce los proyectos LC",
     "description": "Descubre nuestras aplicaciones y herramientas.",
@@ -10,13 +11,32 @@
   },
   "campaigns": [
     {
-      "id": "lc-passwords",
+      "id": "lc-radio",
       "enabled": true,
+      "type": "own",
+      "priority": 10,
+      "startDate": "2026-11-01",
+      "endDate": "2027-12-31",
+      "apps": ["lc-passwords"],
       "title": "LC Universal Radio",
       "description": "Descubre nuestra plataforma de radio por internet.",
       "image": "",
       "link": "https://luischarlii.github.io/",
       "label": "PROYECTO LC"
+    },
+    {
+      "id": "external-demo",
+      "enabled": false,
+      "type": "external",
+      "priority": 5,
+      "startDate": "2026-11-01",
+      "endDate": "2027-12-31",
+      "apps": ["all"],
+      "title": "Anunciante externo",
+      "description": "Espacio disponible para anunciantes.",
+      "image": "",
+      "link": "https://example.com",
+      "label": "PATROCINADO"
     }
   ]
 }
