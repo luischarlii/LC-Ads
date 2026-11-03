@@ -26,7 +26,7 @@
     },
     {
       "id": "external-demo",
-      "enabled": false,
+      "enabled": true,
       "type": "external",
       "priority": 5,
       "startDate": "2026-11-01",
