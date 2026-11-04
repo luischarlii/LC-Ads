@@ -44,7 +44,7 @@
       "id": "lc-cotiza",
       "enabled": true,
       "type": "own",
-      "priority": 10,
+      "priority": 90,
       "startDate": "2026-11-01",
       "endDate": "2027-12-31",
       "apps": ["lc-cotizador"],
