@@ -40,7 +40,20 @@
   "link": "https://vt.tiktok.com/ZSpRSUJoH/",
   "label": "TIKTOK"
 },
-   
+       {
+      "id": "lc-cotiza",
+      "enabled": true,
+      "type": "own",
+      "priority": 10,
+      "startDate": "2026-11-01",
+      "endDate": "2027-12-31",
+      "apps": ["lc-cotizador"],
+      "title": "LC Cotizador Para Tecnicos",
+      "description": "Realiza cotizaciones de manera sencilla y rapida.",
+      "image": "",
+"link": "https://luischarlii.github.io/LC-Cotizador/",
+      "label": "LC Cotizador Tecnico"
+    },
 
     {
       "id": "lc-radio",
