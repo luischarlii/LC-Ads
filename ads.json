@@ -13,7 +13,7 @@
 
 {
   "id": "lc-cotizador",
-  "enabled": false,
+  "enabled": true,
   "type": "own",
   "priority": 95,
   "startDate": "2026-11-04",
@@ -72,18 +72,18 @@
   "label": "TIKTOK"
 },
        {
-      "id": "lc-cotiza",
-      "enabled": false,
+      "id": "lc-passwords",
+      "enabled": true,
       "type": "own",
       "priority": 90,
       "startDate": "2026-11-01",
       "endDate": "2027-12-31",
-      "apps": ["lc-cotizador"],
-      "title": "LC Cotizador Para Tecnicos",
-      "description": "Realiza cotizaciones de manera sencilla y rapida.",
-      "image": "",
-"link": "https://luischarlii.github.io/LC-Cotizador/",
-      "label": "LC Cotizador Tecnico"
+      "apps": ["lc-passwords"],
+      "title": "LC Passwords Generador",
+      "description": "Genera y guarda contraseñas confiables.",
+      "image": "https://luischarlii.github.io/LC-Passwords/pass.png",
+"link": "https://luischarlii.github.io/LC-Passwords/",
+      "label": "LC Passwords Generador"
     },
 
     {
