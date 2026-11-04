@@ -23,7 +23,22 @@
   "description": "Realiza cotizaciones de manera fácil y rápida desde tu celular.",
   "image": "https://luischarlii.github.io/LC-Cotizador/Cotizador.png",
   "link": "https://luischarlii.github.io/LC-Cotizador/",
-  "label": "PROYECTO LC"
+  "label": "PROYECTO COTIZADOR LC"
+},
+
+{
+  "id": "lc-despensa",
+  "enabled": true,
+  "type": "own",
+  "priority": 95,
+  "startDate": "2026-11-04",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "LC Despensa",
+  "description": "Realiza tus compras y no olvides ningun articulo para tu despensa.",
+  "image": "https://luischarlii.github.io/LC-Despensa/despensa.png",
+  "link": "https://luischarlii.github.io/LC-Despensa/",
+  "label": "PROYECTO DESPENSA LC"
 },
 
  
