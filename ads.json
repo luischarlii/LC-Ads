@@ -13,7 +13,7 @@
 
 {
   "id": "lc-cotizador",
-  "enabled": true,
+  "enabled": false,
   "type": "own",
   "priority": 95,
   "startDate": "2026-11-04",
@@ -73,7 +73,7 @@
 },
        {
       "id": "lc-cotiza",
-      "enabled": true,
+      "enabled": false,
       "type": "own",
       "priority": 90,
       "startDate": "2026-11-01",
