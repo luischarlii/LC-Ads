@@ -27,6 +27,21 @@
 },
 
 {
+  "id": "lc-cuenta- capcut",
+  "enabled": true,
+  "type": "own",
+  "priority": 95,
+  "startDate": "2026-11-04",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "LC Gana Dinero Ya!!",
+  "description": "Crea tu cuenta CapCut ya y gana dólares creando plantillas.",
+  "image": "https://luischarlii.github.io/LC-ShortLinks/ apCut.png",
+  "link": "https://https://mobile.capcutshare.com/sv2/ZSb3t12Bq/",
+  "label": " CREADOR PLANTILLAS CAPCUT"
+},
+
+{
   "id": "lc-despensa",
   "enabled": true,
   "type": "own",
