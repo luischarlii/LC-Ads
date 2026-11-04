@@ -13,7 +13,7 @@
 
 {
   "id": "lc-cotizador",
-  "enabled": true,
+  "enabled": false,
   "type": "own",
   "priority": 95,
   "startDate": "2026-11-04",
@@ -76,13 +76,13 @@
       "enabled": true,
       "type": "own",
       "priority": 90,
-      "startDate": "2026-11-01",
+      "startDate": "2026-11-04",
       "endDate": "2027-12-31",
-      "apps": ["lc-passwords"],
+      "apps": ["all"],
       "title": "LC Passwords Generador",
       "description": "Genera y guarda contraseñas confiables.",
       "image": "https://luischarlii.github.io/LC-Passwords/pass.png",
-"link": "https://luischarlii.github.io/LC-Passwords/",
+         "link": "https://luischarlii.github.io/LC-Passwords/",
       "label": "LC Passwords Generador"
     },
 
