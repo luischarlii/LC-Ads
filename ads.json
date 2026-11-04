@@ -10,7 +10,16 @@
     "label": "PUBLICIDAD"
   },
   "campaigns": [
-
+{
+  id: "lc-cotizador",
+  active: true,
+  title: "LC Cotizador",
+  text: "Realiza cotizaciones de manera fácil y rápida desde tu celular.",
+  image: "https://luischarlii.github.io/LC-Cotizador/68B89F1F-792D-4976-B7FC-5AFA3604061A.png",
+  link: "https://luischarlii.github.io/LC-Cotizador/",
+  button: "Visitar aplicación"
+},
+ 
     {
   "id": "nrg-solar-rv",
   "enabled": true,
