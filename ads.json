@@ -10,6 +10,21 @@
     "label": "PUBLICIDAD"
   },
   "campaigns": [
+     {
+  "id": "icono-la-despensa-180"
+  "enabled": true,
+  "type": "external",
+  "priority": 90,
+  "startDate": "2026-11-03",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "icono-la-despensa-180",
+  "description": "Que no nunca falta nada en tu despensa.",
+  "image": "https://luischarlii.github.io/LC-Ads/icono-la-despensa-180.png",
+  "link": "https://wa.me/526142882226",
+  "label": "ANUNCIANTE"
+},
+ 
     {
   "id": "nrg-solar-rv",
   "enabled": true,
