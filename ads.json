@@ -28,7 +28,7 @@
 
 {
   "id": "lc-cuenta-capcut",
-  "enabled": true,
+  "enabled": false,
   "type": "own",
   "priority": 95,
   "startDate": "2026-11-04",
