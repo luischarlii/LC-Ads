@@ -100,7 +100,20 @@
          "link": "https://luischarlii.github.io/LC-ShortLinks/passwords",
       "label": "LC Passwords Generador"
     },
-
+       {
+      "id": "lc-ruta-gif",
+      "enabled": true,
+      "type": "own",
+      "priority": 90,
+      "startDate": "2026-11-04",
+      "endDate": "2027-12-31",
+      "apps": ["all"],
+      "title": "LC Ruta-Gif Gratis",
+      "description": "Manda una dirección detallada en foto gif.",
+      "image": "https://luischarlii.github.io/LC-Ruta-Gif/ruta.png",
+         "link": "https://luischarlii.github.io/LC-ShortLinks/rutagif",
+      "label": "LC Ruta Gif Generador"
+    },
     {
       "id": "lc-radio",
       "enabled": false,
