@@ -27,6 +27,21 @@
 },
 
 {
+  "id": "lc-calcula-pension",
+  "enabled": true,
+  "type": "own",
+  "priority": 95,
+  "startDate": "2026-11-04",
+  "endDate": "2027-12-31",
+  "apps": ["all"],
+  "title": "LC Calcula Tu Pensión",
+  "description": "Realiza el cálculo a tu pensión sin entrevistas.",
+  "image": "https://github.com/luischarlii/LC-Calculadora-De-Pensi-n-/pension.png",
+  "link": "https://luischarlii.github.io/LC-ShortLinks/calculapension",
+  "label": "CALCULA TU PENSION"
+},
+
+{
   "id": "lc-cuenta-capcut",
   "enabled": false,
   "type": "own",
