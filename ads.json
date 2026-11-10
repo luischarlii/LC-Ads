@@ -36,7 +36,7 @@
   "apps": ["all"],
   "title": "LC Calcula Tu Pensión",
   "description": "Realiza el cálculo a tu pensión sin entrevistas.",
-  "image": "https://github.com/luischarlii/LC-Calculadora-De-Pensi-n-/pension.png",
+  "image": "https://luischarlii.github.io/LC-Calculadora-De-Pensi-n-/pension.png",
   "link": "https://luischarlii.github.io/LC-ShortLinks/calculapension",
   "label": "CALCULA TU PENSION"
 },
