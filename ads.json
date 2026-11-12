@@ -1,9 +1,4 @@
-
-{
-  "enabled": true,
-  "rotationSeconds": 12,
-  "default": {
-    "title": "Conoce los proyectos LC",
+   "title": "Conoce los proyectos LC",
     "description": "Descubre nuestras aplicaciones y herramientas.",
     "image": "",
     "link": "https://luischarlii.github.io/",
