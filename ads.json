@@ -1,10 +1,35 @@
-   "title": "Conoce los proyectos LC",
+
+{
+  "enabled": true,
+  "rotationSeconds": 12,
+  "default": {
+    "title": "Conoce los proyectos LC",
     "description": "Descubre nuestras aplicaciones y herramientas.",
     "image": "",
     "link": "https://luischarlii.github.io/",
     "label": "PUBLICIDAD"
   },
   "campaigns": [
+
+{
+
+  "enabled": true,
+
+  "label": "MERCADO PAGO",
+
+  "title": "¡Hola! 👋",
+
+  "description": "Te regalo $100 de descuento para que uses Mercado Pago por primera vez. Tienes 7 días para usarlo y aplica para un pago de $200 🤑",
+
+  "image": "URL_DEL_LOGO_ORIGINAL",
+
+  "link": "https://mpago.li/1xwA49D",
+
+  "apps": ["all"],
+
+  "priority": 100
+
+},
 
 {
   "id": "lc-cotizador",
