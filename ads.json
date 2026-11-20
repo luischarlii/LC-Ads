@@ -31,7 +31,7 @@
 },
 {
       "id": "lc-generador-cv",
-      "enabled": true,
+      "enabled": false,
       "type": "own",
       "priority": 90,
       "startDate": "2026-11-01",
