@@ -29,7 +29,20 @@
   "priority": 100
 
 },
-
+{
+      "id": "lc-generador-cv",
+      "enabled": true,
+      "type": "own",
+      "priority": 90,
+      "startDate": "2026-11-01",
+      "endDate": "2027-12-31",
+      "apps": ["lc-generador-cv"],
+      "title": "Genera Tu Curriculum Gratis",
+      "description": "Aplicación Gratuita para generar el curriculum vitae.",
+      "image": "https://luischarlii.github.io/LC-GENERADOR-CV/cv.png",
+"link": "https://luischarlii.github.io/LC-GENERADOR-CV/",
+      "label": "PROYECTO CURRICULUM"
+    },
 {
   "id": "lc-cotizador",
   "enabled": false,
